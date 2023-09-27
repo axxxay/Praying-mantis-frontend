@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  background-image: url("../public/bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heading{
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: 600;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.my-form {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  background-color: #23222235;
+  border: solid 1px #ffffff;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.error {
+  color: red;
+  font-size: 15px;
+  font-family: "Roboto";
+  align-self: center;
+}
+
+.label {
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-family: "Roboto";
+}
+
+.input-box {
+  outline: none;
+  background-color: transparent;
+  border: solid 1px white;
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 13px;
+  font-family: "Roboto";
+  padding: 0px 15px;
+  box-sizing: border-box;
+}
+
+.location-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location-input {
+  width: 75%;
+}
+
+.locate-button {
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid white;
+  outline: none;
+  cursor: pointer;
+  font-family: "Roboto";
+  padding: 0px 10px;
+}
+
+.submit-button {
+  background-color: white;
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  border: 0px;
+  outline: none;
+  font-family: "Roboto";
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.id {
+  color: white;
+  font-size: 30px;
+  font-family: "Roboto";
+  font-weight: 600;
+  text-align: center;
+}
+
+.success {
+  color: green;
+  font-size: 35px;
+  font-family: "Roboto";
+  font-weight: 600;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .my-form {
+    width: 85%;
+    padding: 20px 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .label {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .heading {
+    font-size: 25px;
+  }
+  .id {
+    font-size: 15px;
+  }
+  .success {
+    font-size: 20px;
+  }
+  .locate-button {
+    font-size: 10px;
+    padding: 0px 5px;
   }
 }
