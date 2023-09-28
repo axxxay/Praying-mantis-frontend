@@ -79,7 +79,9 @@ const onClickLocateMe = () => {
         body: JSON.stringify(userData)
       }
 
-      const response = await fetch("https://service-a-vtdz.onrender.com/user-details", options)
+      // const response = await fetch("http://localhost:4000/user-details", options)
+
+      const response = await fetch("https://micro-service-a.onrender.com/user-details", options)
       const data = await response.json()
       if (response.ok === true) {
         setSuccess(true)
